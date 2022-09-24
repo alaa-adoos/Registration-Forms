@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&family=Combo&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background:linear-gradient(120deg,#937DC2,#C689C6);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+
+
+}
+h1{
+
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+.center{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 400px;
+background-color: white;
+border-radius: 10px;
+}
+.center h1{
+  text-align: center;
+  padding:0 0 20px 0;
+  margin-top:5px;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.center .text{
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #937DC2;
+}
+.text input{
+  width: 100%;
+  padding: 0 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.text label{
+  position: absolute;
+ top: 50%;
+ left: 5px;
+ color: #adadad;
+ transform: translateY(-75%);
+ pointer-events: none;
+ transition: .5s;
+
+}
+.text input:focus ~ label,
+.text input:valid ~ label{
+top:-5px;
+  color: #937DC2;
+}
+button[type="submit"]{
+  width: 100%;
+  height: 50px;
+  background: #FFE6F7;
+  border: 1px solid;
+
+  border-radius: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+font-size: 18px;
+font-weight: 700;
+}
+button[type="submit"]:hover{
+  border-color:#937DC2 ;
+  transition: .5s;
+}
+.loginLink{
+  margin:30px 0 ;
+  text-align: center;
+
+ 
+}
+.loginLink .link{
+  text-decoration: none;
+  color: #937DC2;
+}
+.class1{
+
+
+color: green;
+
+
+}
+.class1::before {
+  content: "\25CF";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color:  green;/* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+ul{
+
+
+  position: relative;
+  columns: 2;
+padding: 0;
+  margin: 14px;
+  
+  
+  }
+ul li{
+  position: relative;
+ list-style: none;
+ font-size: 14px;
+margin: 5px 0;
+ font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+ul li::before {
+  content: "\25CF"; 
+color: #937DC2;
+  font-weight: bold;
+
+  width: 1em; 
+  margin-left: -1em; 
+}
